@@ -16,13 +16,15 @@
 # Commit format and Solution Format
 - Create solution file by your name
 - Upload assignments as plain text files in this format
+  
+  
   Q1
   Solution
   
   Q2
-  Solution
-  ...
-  ...
+  Solution  
+  ...  
+  ...  
 
 - Do not upload any PDF or Doc files.
 - For projects upload as .zip files with a readme.txt describing how to use your code.
