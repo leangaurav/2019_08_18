@@ -1,3 +1,8 @@
+Read this!!
+
+# Access Medium Articles here:
+https://medium.com/the-python-diary
+
 # Maintain Folder Structure:
 - For assignments there is a folder Assignment. All assignments will be present there classwise.
   Ex: Assignment010, Assignment020....
@@ -6,7 +11,11 @@
 - Use Python Identifier naming convention for file or folder names (use alphabets and underscores. Don't use spaces etc.)
   ex: Assignment\gaurav_gupta\assignment1.txt
 
-# Steps to Commit
+# During first push
+- configure global username and password in git.
+- while pushing for first time, a popup window will open asking for github username and password.
+
+# Steps to Commit/ Add/ Push files to main repository 
 1. check untracked files via `git status`
 2. add untracked file `git add <filename>` or `git add *` Prefer first method over the other
 3. Commit your changes `git commit -m "meaningful message"`
