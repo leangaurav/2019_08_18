@@ -1,0 +1,53 @@
+1. 6 19
+2.
+a=input('enter string')
+print(len(a))
+
+3.
+
+a=int(input('enter a number')
+b=int(input('enter 2nd number')
+
+print(a+b)
+print(a-b)
+4.  abde
+5. abde
+6. abababab
+7.
+ab
+ab
+ab
+ab
+
+8.
+a=input('enter a string')
+n=int(input('enter a number'))
+a1=a+'\n'
+print(a1*n)
+
+9.None
+10.int
+11. string
+26
+
+12.sqrt
+13.
+import math
+a=int(input('enter a nunber'))
+print(math.sqrt(a))
+
+14.
+a=int(input('enter a nunber'))
+b=int(input('enter a nunber'))
+c=int(input('enter a nunber'))
+d=int(input('enter a nunber'))
+print((a+b+c+d)/4)
+
+15. print the absolut value of the argument
+16. __main__
+17.__main__
+18.no
+19.
+__main__
+builtins
+int

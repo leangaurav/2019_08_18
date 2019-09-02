@@ -1,0 +1,54 @@
+1.
+
+1.d
+2.detneirO tcejbO si nohtyP
+3.Python is Object Oriente
+4.blank
+5.on is
+
+
+2.IndexError: string index out of range
+3.IndexError: string index out of range
+4.
+
+a)
+6
+a b c
+5
+b)
+['a#b#c#d#']
+['a', 'b', 'c', 'd', '']
+a$b$c$d$
+
+c)
+av
+d)
+True
+e)
+0,1,2
+f)
+abcba
+0,0,0,
+
+5.
+
+import string
+s=input('enter a string')
+print(s.strip())
+
+6.
+7. dir(str)
+8.hasattr(str,rstrip)
+9.
+10.
+line1='python is good'
+line2 = line1.replace(' ','\n')
+print(line2)
+
+11.
+name=input('enter name')
+name1=name.split(' ')
+print(name1[0],len(name1[0]))
+print(name1[1],len(name1[1]))
+
+12.
