@@ -1,0 +1,6 @@
+n1 = int(input(('Enter real Part: ')))
+n2 = int(input(('Enter imaginary Part: ')))
+cn = complex(n1,n2)
+print("Complex Number: ",cn)
+print("Complex Number - Real part: ",cn.real)
+print("Complex Number - Imaginary part: ",cn.imag)

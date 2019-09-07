@@ -1,0 +1,219 @@
+ASSIGNMENT-3
+Chandan Mohanta
+_________________________
+-------------------------
+
+
+
+1. 
+WAP to input 2 strings and swap the strings
+s1 = input('Enter 1st String: ')
+s2 = input('Enter 2nd String: ')
+a = s1[::-1]
+b = s2[::-1]
+print(a,b,sep='\n')
+________________________________________________________________________________________________________
+
+2.
+WAP to generate 4 random numbers in the range 0-26 and print their average.
+
+import random
+n1 = random.randrange(0,26)
+n2 = random.randrange(0,26)
+n3 = random.randrange(0,26)
+n4 = random.randrange(0,26)
+print('Four random numbers : ',n1,n2,n3,n4, sep=',')
+print('avg = ',(n1+n2+n3+n4)/4)
+________________________________________________________________________________________________________
+
+3.
+WAP to generate and print a random uppercase or lowercase alphabet. Try these:
+
+import random
+import string
+def get_random_char():
+    return random.choice(string.ascii_letters)
+
+print(get_random_char())
+________________________________________________________________________________________________________
+
+4.
+WAF get_si() that takes Principle, Rate and Time as arguments and returns the Simple
+Interest.
+
+def get_si(p,r,t):
+    si=p*r*t/100
+    return si
+get_si(1000,10,2)
+
+________________________________________________________________________________________________________
+
+5.
+WAF get_amount() that takes Principle, Rate and Time as arguments and returns the
+Total amount using the get_si() function from above to calculate the SI. Also provide
+Rate = 10 and Time = 1 as default arguments.
+
+p = int(input('Enter Principal amount: '))
+
+def get_si(p,r=10,t=1):
+    si=p*r*t/100
+    return si
+get_si(p)
+
+def get_amount(p,r=10,t=1):
+    get_si(p)
+    ta = p + get_si(p)
+    return ta
+get_amount(p)
+
+________________________________________________________________________________________________________
+
+6.
+WAP get_ci() that takes Principle, Rate and Time as arguments and returns the
+Compound Interest.
+
+p = float(input('Enter P: '))
+r = float(input('Enter R in %: '))
+t = float(input('Enter T: '))
+def get_ci(p,r,t):
+    ci = p*((1+r/100)**t)
+    return(ci)
+get_ci(1000,10,2)
+________________________________________________________________________________________________________
+
+7.
+WAP get_q_r() taking 2 numbers as parameters and returns the quotient and
+remainder in the form of a tuple.
+
+ def get_q_r(n1,n2):
+    r = n1%n2
+    q = n1//n2
+    return(q,r)
+get_q_r(10,3)
+
+________________________________________________________________________________________________________
+
+8.
+WAP to find the length of hypotenuse of a right angled triangle, input the height and
+base from user.
+
+import math
+h = float(input('Enter height: '))
+b = float (input('Enter base: '))
+def hypotenuse(h,b):
+    hyp = math.sqrt((h**2+b**2))
+    return (hyp)
+hypotenuse(h,b) 
+
+________________________________________________________________________________________________________
+
+9. 
+WAP to input number of seconds and print in days, hours, minutes and seconds
+ex: input = 10000
+Output = 0 day 2 hour 46 minute 40 second
+
+ss = float(input('Enter seconds: '))
+def sec(ss):
+    mm = ss/60
+    hh = mm/60
+    dd = hh/24
+    return(dd,hh,mm)
+sec(ss)
+________________________________________________________________________________________________________
+
+10.
+Check your version of python interpreter without opening the interpreter (Which
+command needs to be used on the command line).
+
+python -V (only V not v)
+
+________________________________________________________________________________________________________
+
+11.
+x = 2
+x *= 3  #x*3=6
+x = x%4 #6%4=2 (remainder of 6/4)
+y = -x  
+print(x,y)
+
+o/p:
+6 -2
+________________________________________________________________________________________________________
+
+12.
+def funct():
+    pass
+print(funct())
+
+o/p: None
+________________________________________________________________________________________________________
+
+13.
+WAP to input the real and imaginary part of a complex number and print it on screen.
+output should look like
+re:10 im:20
+if the user gives input as 10 and 20. Save the code in a script complex.py
+
+n1 = int(input(('Enter real Part: ')))
+n2 = int(input(('Enter imaginary Part: ')))
+cn = complex(n1,n2)
+print("Complex Number: ",cn)
+print("Complex Number - Real part: ",cn.real)
+print("Complex Number - Imaginary part: ",cn.imag)
+________________________________________________________________________________________________________
+
+14.
+Update complex.py and create a functions input_complex() and print_complex().
+[Note: DO not use the built-in complex class]
+a-- input_complex() :
+takes input from user and returns the real and imaginary part in a tuple.
+
+n1 = int(input(('Enter real Part: ')))
+n2 = int(input(('Enter imaginary Part: ')))
+def input_complex():
+    re = n1
+    im = n2
+    return(re,im)
+input_complex()
+--------------------------------------------
+
+b-- print_complex(re, im):
+takes the 2 arguments real and imaginary part as arguments and prints
+the number on screen in the format:
+re:10 im:20
+Now use the 2 functions to input 2 complex numbers and print them on screen
+
+re = int(input(('Enter real Part: ')))
+im = int(input(('Enter imaginary Part: ')))
+def print_complex(re, im):
+    return(re,im)
+print('re:' + str(re) + ' im:' + str(im))
+--------------------------------------------
+
+n11 = int(input(('Enter 1st real Part: ')))
+n12 = int(input(('Enter 1st imaginary Part: ')))
+n21 = int(input(('Enter 2nd real Part: ')))
+n22 = int(input(('Enter 2nd imaginary Part: ')))
+
+def input_complex(re11,im12,re21,im22):
+    re11 = n11
+    im12 = n12
+    re21 = n21
+    im22 = n22
+    return re11,im12,re21,im22
+
+def print_complex(re11,im12,re21,im22):
+    input_complex(re11,im12,re21,im22)
+    print_complex(re11,im12,re21,im22)
+    print('re11:' + str(re11) + ' im12:' + str(im12) + 're21:' + str(re21) + 'im22:' + str(im22))
+
+________________________________________________________________________________________________________
+
+15.
+add():
+takes 4 arguments: (re1, im1, re2, im2) denoting the real and imaginary parts of
+the complex numbers to be added. The function adds and returns a single tuple
+denoting the resulting complex number.
+Ex: add (10, 20, 5, -30) should return (15, -10).
+
+

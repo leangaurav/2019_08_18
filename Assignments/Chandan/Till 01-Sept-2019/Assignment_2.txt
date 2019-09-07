@@ -1,0 +1,167 @@
+ASSIGNMENT-2
+Chandan Mohanta
+_________________________
+-------------------------
+
+1.
+s='python is Object Oriented'
+#  123456789       987654321
+print(s[-1])     # last leter
+print(s[::-1])   # reverse string
+print(s[:-9])    # print till 9th
+print(s[1:1])    # NA
+print(s[4:10])   # from 4-10
+
+i) d
+ii) detneirO tcejbO si nohtyp
+iii)python is Object Oriente
+iv)
+v)on is 
+________________________________________________________________________________________________________
+
+2.
+string index out of range
+3.
+string index out of range
+________________________________________________________________________________________________________
+
+4.##split() method returns a list of strings after breaking the given string by the specified separator.##
+
+a)
+6
+abc
+3
+-------------------------
+
+b)
+['a#b#c#d#']
+['a', 'b', 'c', 'd', '']
+a$b$c$d$
+-------------------------
+
+c) av   -- doubt
+-------------------------
+
+d) false
+-------------------------
+ 
+e)0,1,2
+##print(4%2, 5%2, 2%5, sep=',') -- sep=',' specify how the numbers shall be separated here##
+
+-------------------------
+
+f)
+0 ,0 ,1 ,
+
+s='abcba'
+print(s.count('a', 2,4) , end = ' ,') # excludes 4th position
+-------------------------
+________________________________________________________________________________________________________
+
+5.
+WAP to input a string and remove all spaces from it.
+
+s = input(('Enter String: '))
+r1=s.split() #splitted the string
+r2=''.join(r1) #removed space
+print(r1)
+print(r2)
+
+split() method returns a list of strings after breaking the given string by the specified separator
+The join() method is a string method and returns a string in which the elements of sequence have been joined by str separator.
+
+--alter method (copied):
+import string
+s=input('enter a string')
+print(s.strip())
+
+
+________________________________________________________________________________________________________
+
+6. [] means empty list.
+
+________________________________________________________________________________________________________
+
+7.
+dir(str)
+________________________________________________________________________________________________________
+
+8. 'rstrip' in dir(str)
+
+
+copied: hasattr(str,rstrip)
+The hasattr() method returns true if an object has the given named attribute and false if it does not.
+________________________________________________________________________________________________________
+
+9.
+
+
+
+________________________________________________________________________________________________________
+
+10.
+WAP to input a string and replace all space with new lines (\n) and print again.
+
+s = input(('Enter String: '))
+r1=s.split() #splitted the string
+r2='\n'.join(r1) #removed space and added \n
+print(r1)
+print(r2)
+________________________________________________________________________________________________________
+
+11.
+WAP to input complete name(first and last name separated by space) and print first and last
+name separately along with their length in upper case.
+
+name = input(('Enter full name: '))
+x = name.split()
+y = '\n'.join(x)
+z = y.upper() #converts lowecase to upper case
+print(y)
+print(len(y)) # doubt: how to get length of name and surame separately
+print(z)
+----------------------------------------------------
+#copied:
+name=input('enter name')
+name1=name.split(' ')
+print(name1[0],len(name1[0])) #ask meaning of this
+print(name1[1],len(name1[1]))
+________________________________________________________________________________________________________
+
+12.
+WAP to input a string and split it into 2 halves. The string can be of any length
+Ex-1: Input = “String”
+S1 = Str
+S2 = ing
+Ex-2: Input = “words”
+S1 = wo
+S2 = ds
+
+-----------------------------------------------------
+import math
+s = input(('Enter the string: '))
+l = len(s)
+l1 = math.floor(len(s)/2) 
+l2 = math.ceil(len(s)/2)
+print(s[0:l1]) #print 0-half (excluding c)
+print(s[l2:l]) #print from half to last (excluding c)
+
+o/p:
+ab
+de
+------------------------------------------------------
+
+here,
+string used: s = 'abcde'
+len(s): 5
+half of s = 2.5
+we have to divide into 2 halves. 
+dividing string of even no. lenght is usual but diving string of odd length has to be (as per question):
+so, 1st half will have 'ab' skipping 'c'
+and 2nd half will have 'de' skipping 'c'
+so, we used 'math.floor(len(s)/2)' to get lower limit of len(s)/2 and 'math.ceil(len(s)/2)' to get upper limit of len(s)/2. and hence was able to skip the middle character of the string, i.e, 'c'.
+________________________________________________________________________________________________________
+
+
+
+**********************THE END**********************

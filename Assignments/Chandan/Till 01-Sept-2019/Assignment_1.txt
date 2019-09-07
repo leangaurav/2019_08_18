@@ -1,0 +1,126 @@
+ASSIGNMENT-1
+Chandan Mohanta
+_________________________
+-------------------------
+
+1.
+len(s1)=6
+len(s2)=19
+________________________________________________________________________________________________________
+
+2.
+#WAP to input a string and print its length.
+
+s = input('Enter String:')
+print(len(s))
+________________________________________________________________________________________________________
+
+3.
+#WAP to input 2 numbers and print their sum and difference.
+
+n1=int(input('Enter 1st number:'))
+n2=int(input('Enter 2nd number:'))
+addition=n1+n2
+subtraction=n1-n2
+print('sum:',addition,'difference:',subtraction)
+________________________________________________________________________________________________________
+4.
+s3 = 'abde'
+________________________________________________________________________________________________________
+6.
+s1 = abababab
+________________________________________________________________________________________________________
+7.
+o/p:
+ab
+ab
+ab
+ab
+________________________________________________________________________________________________________
+8.
+WAP to input a string s and a number n. Print the string n times on the screen, each should
+appear in a separate line (do not use any kind of loops, use the multiplication operator).
+
+s = input('Enter the string: ')
+n = int(input('Enter the number: '))
+r= s+'\n'
+print(r*4)
+
+---------------
+##alter method (copied):
+https://stackoverflow.com/questions/40008279/repeat-a-string-n-times-and-print-n-lines-of-it/40008347#40008347
+
+def repeat(a,n):
+    print((((a*n)+'\n')*n)[:-1])
+    
+________________________________________________________________________________________________________
+
+####(--Quora--)“res” or “RES” has no inherent meaning in Python. If you saw this in a segment of Python code, perhaps in someone’s answer to a question, then it is likely just a variable name, chosen by the author.####
+
+9.
+Gaurav
+None
+________________________________________________________________________________________________________
+10.
+<class 'int'>
+________________________________________________________________________________________________________
+11.
+<class 'str'>
+26
+________________________________________________________________________________________________________
+12.
+Find the name of function to find the square root. (see all the options available in dir() of math)
+sqrt
+
+##
+import math
+dir(math)
+math.sqrt
+##
+________________________________________________________________________________________________________
+
+13.
+WAP to input a number and print its square root ().
+
+import math
+n = int(input('Input numter: '))
+sq = math.sqrt(n)
+print(sq)
+________________________________________________________________________________________________________
+
+14.
+WAP to input 4 numbers from user and print their average
+
+n1=int(input('enter a nunber'))
+n2=int(input('enter a nunber'))
+n3=int(input('enter a nunber'))
+n4=int(input('enter a nunber'))
+N = (n1+n2+n3+n4)/4
+print(N)
+________________________________________________________________________________________________________
+
+15.
+help()
+#type abs in the field provided#
+
+abs(x, /)
+    Return the absolute value of the argument.
+________________________________________________________________________________________________________
+16.
+__main__
+
+17.
+__main__
+________________________________________________________________________________________________________
+
+18. No.
+
+19.
+__main__
+builtins
+int
+
+
+
+
+**********************THE END**********************
