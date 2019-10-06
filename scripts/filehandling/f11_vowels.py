@@ -1,0 +1,1 @@
+# WAP to read a file lines.txt and print number of vowels in it
