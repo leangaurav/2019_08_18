@@ -49,7 +49,7 @@ def play_game():
         guess=input(text)
         #guess=guess.upper()
         if guess in attempts:
-            print('You guessed"'+guess+'"')
+            print('You already guessed"'+guess+'"')
         elif len(guess)==len(word):
             attempts.append(guess)
             if guess==word:
