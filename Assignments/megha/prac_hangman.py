@@ -1,6 +1,6 @@
 import random
 import urllib.request as request
-
+k='y'
 def get_word():
 
 	word = None
@@ -66,6 +66,10 @@ def play_game():
         else:
             print('Invalid entry')
     print('Yes the word is',word+'! You got it in',len(attempts),'tries')     
-
-play_game()
+    play_again=input("Do u want to play again(y/n):")
+    k=play_again
+    if(k=='n'):
+            exit()
+while k=='y':
+      play_game()
         
