@@ -47,12 +47,17 @@ def play():
            print("Success")
            print("1.Play")
            print("2.Exit")
-           z=int(input("Press 2 for exit:"))
-           if z==2:
-                exit()
-        else: 
-             print("Better luck next time .. Continue the game") 
-
+	   y=int(input("Enter 1/2:"))
+           if y==2:
+                   exit()
+	 else:
+              print("Try next time")
+              print("1.Play")
+              print("2.Exit")
+              z=int(input("Press 2 for exit:"))
+              if z==2:
+                     exit()
+print("JUMBLED WORD GAME")
 print("1.Play")
 print("2.Exit")
 i=int(input("Enter(1/2):"))
