@@ -4,12 +4,14 @@ import copy
 
 class ContactManager:
 	def __init__(self):
-		# TODO: Connect to db and initialize class level attributes
-		pass
+		self.sql_mgr = SQLHandler('contacts.db')
+		self.contacts = self.sql_mgr.get_contacts()
 	
 	def __get_index_by_name(self, name):
-		# TODO: write logic
-		pass
+		for idx, contact in enumerate(self.contacts):
+			if contact.name.lower() == name.lower():
+				return idx
+		return -1
 		
 	def find_by_name(self, name):
 		# TODO: write logic
@@ -20,16 +22,23 @@ class ContactManager:
 		pass
 	
 	def get_contacts(self):
-		# TODO: write logic
-		pass
+		return self.contacts
 	
 	def add_contact(self, contact_data):
-		# TODO: write logic
-		pass
+		res = self.sql_mgr.add_contact(contact_data)
+		if res:
+			self.contacts.append(contact_data)
+		
+		return res
 	
 	def delete_contact(self, contact_name):
-		# TODO: write logic
-		pass
+		res = self.sql_mgr.delete_contact(contact_name)
+		if res:
+			idx = self.__get_index_by_name(contact_name)
+			self.contacts.pop(idx)
+			
+		return res
+			
 	
 	def update_name(self, name, new_name):
 		# TODO: write logic
